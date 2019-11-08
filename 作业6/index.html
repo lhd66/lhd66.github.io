@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>模仿腾讯</title>
+
+		<style>
+			.bigbox {
+				content: " ";
+				display: block;
+				clear: both;
+				height: 1000px;
+				width: 1240px;
+			}
+			
+			.logo {
+				position: relative;
+				left: 60px;
+				top: 40px;
+				background-image: url('img/untitled.png');
+				height: 50px;
+				width: 162px;
+				background-size: 100% 100%;
+			}
+			
+			.search {
+				position: relative;
+				left: 500px;
+				top: 0px;
+				border-style: solid;
+				border-radius: 200px;
+				border-width: 1px;
+				border-color: cornflowerblue;
+				height: 30px;
+				width: 450px;
+			}
+			
+			.button {
+				background-color: cornflowerblue;
+				/* Green */
+				border: none;
+				color: white;
+				padding: 4px 25px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				cursor: pointer;
+				border-radius: 200px;
+				margin: 0;
+				float: right;
+			}
+			
+			.dropdown {
+				margin-top: 4px;
+				margin-left: 15px;
+				position: relative;
+				display: inline-block;
+			}
+			
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 40px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+				padding: 12px 16px;
+			}
+			
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			
+			.input {
+				position: relative;
+				top: -24px;
+				left: 40px;
+			}
+			
+			.topimage1 {
+				height: 30px;
+				width: 30px;
+				position: relative;
+				left: 1100px;
+				top: -30px;
+				background-image: url('img/QQ图片20191104132640.png');
+				background-size: 100% 100%;
+			}
+			
+			.topimage2 {
+				height: 30px;
+				width: 30px;
+				position: relative;
+				left: 1170px;
+				top: -60px;
+				background-image: url('img/QQ图片20191104132653.png');
+				background-size: 100% 100%;
+			}
+			
+			.dropdown a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			.nav {
+				width: 1240px;
+				height: 45px;
+				line-height: 50px;
+				margin: 0px 60px;
+				background-color: cornflowerblue;
+			}
+			
+			.nav li {
+				float: left;
+				width: 150px;
+				height: 45px;
+				list-style: none;
+				text-align: center;
+			}
+			
+			.nav li a {
+				color: white;
+				text-decoration: none;
+				text-align: center;
+				line-height: 1px;
+			}
+			
+			.nav li:hover {
+				background-color: lightblue;
+			}
+			
+			.midl {
+				height: 80px;
+				width: 740px;
+				margin: 30px 60px;
+				background-image: url(img/QQ图片20191106215735.png);
+				background-size: 100% 100%;
+				;
+			}
+			
+			.midr {
+				height: 80px;
+				width: 350px;
+				background-image: url(img/QQ图片20191106215716.png);
+				background-size: 100% 100%;
+				;
+				position: relative;
+				left: 945px;
+				top: -108px;
+			}
+			
+			.s {
+				width: 1240px;
+				height: 700px;
+				position: relative;
+				left: 60px;
+				top: -50px;
+			}
+			
+			.left {
+				width: 350px;
+				height: 600px;
+				float: left;
+				
+			}
+			
+			.mid {
+				width: 350px;
+				height: 600px;
+				margin-left: 91px;
+				float: left;
+			}
+			
+			.right {
+				width: 350px;
+				height: 600px;
+				margin-left: 91px;
+				float: left;
+			}
+			
+			div.img {
+				margin: 10px 10px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 150px;
+			}
+			
+			div.img:hover {
+				border: 1px solid #777;
+				opacity: 0.8;
+			}
+			
+			div.img img {
+				float: left;
+				width: 149px;
+				height: 125px;
+			}
+			
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+			
+			* {
+				box-sizing: border-box;
+			}
+			
+			@media only screen and (max-width: 700px) {
+				.responsive {
+					width: 49.99999%;
+					margin: 6px 0;
+				}
+			}
+			
+			@media only screen and (max-width: 500px) {
+				.responsive {
+					width: 100%;
+				}
+			}
+			
+			.clearfix:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.s h2{
+				position: relative;
+				left: 10px;
+				color: #6495ED;
+			}
+			.s a{
+				position: relative;
+				left: 10px;
+				color:  #000000;
+				text-decoration: none;
+				
+				
+			}
+			.s a:hover {
+				color: cornflowerblue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="bigbox">
+			<div class="logo"></div>
+			<div class=" search">
+				<div class="dropdown">
+					<a href="">类型</a>
+					<div class="dropdown-content">
+
+						<a href="">冒险</a>
+						<br></br>
+						<a href="">科幻</a>
+						<br></br>
+						<a href="">惊悚</a>
+						<br></br>
+						<a href="">历史</a>
+						<br></br>
+						<a href="">青春</a>
+						<br></br>
+						<a href="">狗血</a>
+					</div>
+					<div class="input">
+						<form>
+							<input name="fname" style="border: hidden;height:27px ;width:275px ;">
+						</form>
+					</div>
+
+				</div>
+
+				<a href="https://www.sogou.com/" target="_blank"><button class="button button1">搜狗搜索</button></a>
+
+			</div>
+
+			<div class="topimage1"></div>
+			<div class="topimage2"></div>
+
+			<div class="nav">
+				<ul>
+					<li>
+						<a>
+							<font size="4">类型</font>
+						</a>
+					</li>
+					<li>
+						<a href="https://list.iqiyi.com/www/1/9-------------11-1-1-iqiyi--.html" target="_blank">
+							<font size="4">科幻</font>
+						</a>
+					</li>
+					<li>
+						<a href="https://list.iqiyi.com/www/1/9-------------11-1-1-iqiyi--.html" target="_blank">
+							<font size="4">历史</font>
+						</a>
+					</li>
+					<li>
+						<a href="https://list.iqiyi.com/www/1/9-------------11-1-1-iqiyi--.html" target="_blank">
+							<font size="4">青春</font>
+						</a>
+					</li>
+					<li>
+						<a href="https://list.iqiyi.com/www/1/9-------------11-1-1-iqiyi--.html" target="_blank">
+							<font size="4">剧情</font>
+						</a>
+					</li>
+					<li>
+						<a href="https://list.iqiyi.com/www/1/9-------------11-1-1-iqiyi--.html" target="_blank">
+							<font size="4">动画</font>
+						</a>
+					</li>
+					<li>
+						<a href="https://list.iqiyi.com/www/1/9-------------11-1-1-iqiyi--.html" target="_blank">
+							<font size="4">喜剧</font>
+						</a>
+					</li>
+					<li>
+						<a href="https://list.iqiyi.com/www/1/9-------------11-1-1-iqiyi--.html" target="_blank">
+							<font size="4">狗血</font>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="midl"></div>
+			<div class=" midr"></div>
+
+			<div class="s">
+
+				<div class="left">
+					<h2>今日焦点</h2>
+					<a target="_blank" href="https://www.iqiyi.com/v_19rv7eso4w.html?vfrm=pcw_home&vfrmblk=D&vfrmrst=712211_focus_A_title1">国家新闻出版署：未成年人22点至8点禁玩网游</a>
+					<br></br><br></br>
+					<a target="_blank" href="https://www.iqiyi.com/v_19rv7ep5f0.html?vfrm=pcw_home&vfrmblk=D&vfrmrst=712211_focus_A_image2">国家邮政局：双11高峰业务量预计达28亿件</a>
+					<br></br><br></br>
+					<a target="_blank" href="https://www.iqiyi.com/v_19rv7er8ik.html?vfrm=pcw_home&vfrmblk=D&vfrmrst=712211_focus_A_image3">日本10列新干线列车全部报废 损失或高达百亿日元</a>
+					<br></br><br></br>
+					<a target="_blank" href="https://www.iqiyi.com/v_19rv7er6s0.html?vfrm=pcw_home&vfrmblk=D&vfrmrst=712211_focus_A_title4">黑龙江一冷鲜店被查出7000余只野生动物死尸</a>
+					<br></br><br></br>
+					<a target="_blank" href="https://www.iqiyi.com/v_19rv7esxow.html?vfrm=pcw_home&vfrmblk=D&vfrmrst=712211_focus_A_title5">Baby画技幼儿园水平？最美时刻只因小海绵</a>
+					<br></br><br></br>
+					<a target="_blank" href="https://www.iqiyi.com/v_19rv7my4ow.html?vfrm=pcw_home&vfrmblk=D&vfrmrst=712211_focus_A_image6">奇葩说6：杨超越说傅首尔开杠在吵架</a>
+					
+				</div>
+
+				<div class="mid">
+
+					<div class="responsive">
+						<div class="img">
+							<a target="_blank" href="">
+								<img src="img/u=2346710318,3650146048&fm=26&gp=0.jpg" alt="图片文本描述" width="150" height="200">
+							</a>
+							<div class="desc">速度与激情6</div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="img">
+							<a target="_blank" href="/">
+								<img src="img/u=3586053105,464309147&fm=26&gp=0.jpg" alt="图片文本描述" width="150" height="200">
+							</a>
+							<div class="desc">三体</div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="img">
+							<a target="_blank" href="">
+								<img src="img/u=2068842040,607557900&fm=26&gp=0.jpg" alt="图片文本描述" width="150" height="200">
+							</a>
+							<div class="desc">星际迷航3</div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="img">
+							<a target="_blank" href="">
+								<img src="img/u=532016449,534229860&fm=26&gp=0.jpg" alt="图片文本描述" width="150" height="200">
+							</a>
+							<div class="desc">战狼2</div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="img">
+							<a target="_blank" href="">
+								<img src="img/u=3265513823,737543494&fm=26&gp=0.jpg" alt="图片文本描述" width="150" height="200">
+							</a>
+							<div class="desc">哈利波特</div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="img">
+							<a target="_blank" href="">
+								<img src="img/111.png" alt="图片文本描述" width="150" height="200">
+							</a>
+							<div class="desc">阿凡达2</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="right">
+					<h2>豆瓣电影排行榜</h2>
+					<p>《肖申克的救赎》豆瓣评分9.6</p>
+					<p>《控方证人》豆瓣评分9.6</p>
+					<p>《霸王别姬》豆瓣评分9.5</p>
+					<p>《美丽人生》豆瓣评分9.5</p>
+					<p>《美丽人生》豆瓣评分9.5</p>
+					<p>《阿甘正传》豆瓣评分9.4</p>
+					<p>《辛德勒的名单》豆瓣评分9.4</p>
+					<p>《盗梦空间》豆瓣评分9.2</p>
+					<p>《泰坦尼克号》豆瓣评分9.2</p>
+					<p>《忠犬八公的故事》豆瓣评分9.2</p>
+					
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

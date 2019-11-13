@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>天猫双十一</title>
+		<style>
+		.all{
+			background-color: orangered;
+		}	
+			.logo {
+				position: relative;
+				left: 60px;
+				top: 50px;
+				background-image: url('img/QQ图片20191112225919.png');
+				height: 70px;
+				width:190px;
+			}
+			.img{
+				position: relative;
+				left: 600px;
+				top:-15px;
+				background-image: url('img/u=1014412350,1979863063&fm=11&gp=0.jpg');
+				height: 90px;
+				width:500px;
+				background-size:100% 100% ;
+			}
+
+			.flex-father {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				/*width: 995px;*/
+				height: auto;
+				margin-left: 160px;
+				margin-right: 160px;
+				background-color: lightgrey;
+				margin-top: 50px;
+				/*margin: 0 auto;*/
+			}
+			.flex-father a:hover{
+				border: 3px solid yellow;
+			}
+			.flex-son { 
+				width: 236px;
+				height: 302px;
+				margin: 0;
+				padding: 0;
+				
+			}
+			
+			@media (min-width:900px) {
+				.flex-father {
+					flex-wrap: wrap;
+				}
+			}
+			@media only screen and (max-width:1080px) {
+				.flex-father .flex-son {
+					flex-basis: 100%;
+				}
+			}
+			@media only screen and (min-width:800px) {
+				.flex-father .flex-son {
+					flex-basis: 75%;
+				}
+			}
+			
+			@media only screen and (min-width:480px) {
+			 .flex-father	.flex-son {
+					flex-basis: 50%;
+				}
+			}
+			
+			@media only screen and (max-width:480px) {
+				 .flex-father .flex-son {
+					flex-basis: 25%;
+				}
+			}
+			
+			.flexson-one-price {
+				width: 235px;
+				height: 301px;
+				margin-left: 13px;
+				text-align: center;
+				float: left;
+				display: block;
+				border-bottom: 15px solid #f5f5f5;
+				position: relative;
+				background-color: #fff;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			.flex-sontop {
+				width: 68px;
+				height: 20px;
+				color: #fff;
+				line-height: 20px;
+				font-size: 14px;
+				margin: 0 auto;
+				
+			}
+			
+			.flex-son-img {
+				height: 185px;
+				width: 185px;
+				text-align: center;
+				transition: right .3s;
+				margin-left: -58px;
+				margin-right: auto;
+				
+			}
+			
+			.flex-son-title {
+				width: 135px;
+				height: 40px;
+				font-size: 14px;
+				color: #333;
+				line-height: 20px;
+				overflow: hidden;
+				margin: 8px auto;
+				margin-left: -30px;
+			}
+			
+			.flex-price {
+				font-size: 18px;
+				color: #FF0036;
+				line-height: 18px;
+				margin: 20px auto;
+				margin-left: -5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+			<div class="logo"></div>
+			<div class="img"></div>
+			<div class="flex-father">
+			<a class="flexson-one-price " href="">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/TB2JZnYaNPI8KJjSspoXXX6MFXa_!!1070626038_png_430x430q90.png">
+						<div class="flex-son-title">升森水果泰国黑金刚莲雾</div>
+						<div class="flex-price">￥90.4</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/TB2lJLjtFmWBuNjSspdXXbugXXa_!!2048072920_jpg_430x430q90.jpg">
+						<div class="flex-son-title">进口菲律宾凤梨</div>
+						<div class="flex-price">￥73</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/O1CN011BwA0ACTRJt0Tqp_!!3251700009_jpg_430x430q90.jpg">
+						<div class="flex-son-title">新西兰进口雪糕大桶装蜂窝焦糖冰激凌</div>
+						<div class="flex-price">￥198</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/O1CN0184NctX1hi1ati5UWQ_!!3015214310_jpg_430x430q90.jpg">
+						<div class="flex-son-title">智利进口车厘子</div>
+						<div class="flex-price">￥128</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/O1CN01GHPTK01D8MFFxCtkG_!!2217550171_jpg_430x430q90.jpg">
+						<div class="flex-son-title">菲律宾进口非转基因木瓜</div>
+						<div class="flex-price">￥59</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/O1CN01MJCiEL27ftjYO8ZnE_!!4106327825_jpg_430x430q90.jpg">
+						<div class="flex-son-title">大西洋真鳕鱼新鲜宝宝辅食进口鳕鱼片雪鱼块带皮</div>
+						<div class="flex-price">￥109</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/TB1eKRebwHqK1RjSZJnXXbNLpXa_!!2-item_pic_png_430x430q90.png">
+						<div class="flex-son-title">泰国进口红毛丹</div>
+						<div class="flex-price">￥49</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/TB2gJXGu4GYBuNjy0FnXXX5lpXa_!!2673935279_jpg_430x430q90.jpg">
+						<div class="flex-son-title">泰国莲雾果新鲜水果黑金刚莲雾</div>
+						<div class="flex-price">￥129</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		</div>	
+	</body>
+</html>
